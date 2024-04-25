@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  width: 370px;
+  background: #00c3ff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover header {
+  color: #b89f14;
+}
+
+.container form {
+  margin: 40px 0 20px 0;
+}
+
+.container form input,
+.container form select,
+.container form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.container form input {
+  height: 50px;
+  padding: 0 15px;
+  border: 1px solid #999;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.container form input:focus {
+  border: 2px solid rgb(148, 141, 38);
+  padding: 0 14px;
+}
+
+.container form .drop-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container form .drop-list .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 45px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.container form .drop-list .select-box img {
+  max-width: 21px;
+}
+
+.container form .drop-list .select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+
+.container form .drop-list .select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container form .drop-list .select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.container form .drop-list .select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+  border-right: 2px solid #ffffff;
+}
+
+.container .drop-list .icon {
+  font-size: 22px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.container form .exchange_rate {
+  font-size: 16px;
+  margin: 20px 0 30px;
+}
+
+.container form button {
+  height: 52px;
+  background:#b89f14 ;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: large;
+}
+
+.container form button:hover {
+  background: transparent;
+  color: #000000;
+  border: 2px solid rgb(148, 141, 38);
+  transform: scale(1.05);
+}
+
